@@ -4342,6 +4342,9 @@ end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n•عذرآ لا تستطيع استخدام معرف البوت ","md",true)  
 end
+if Controller(msg_chat_id,UserId_Info.id) == 'مطور السورس' then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*•عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId_Info.id).." } *","md",true)  
+end
 if Controller(msg_chat_id,UserId_Info.id) == 'المطور الاساسي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*•عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId_Info.id).." } *","md",true)  
 end
@@ -4398,6 +4401,9 @@ return LuaTele.sendText(msg_chat_id,msg_id,"\n•عذرآ لا تستطيع اس
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n•عذرآ لا تستطيع استخدام معرف البوت ","md",true)  
+end
+if Controller(msg_chat_id,UserId_Info.id) == 'مطور السورس' then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*•عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId_Info.id).." } *","md",true)  
 end
 if Controller(msg_chat_id,UserId_Info.id) == 'المطور الاساسي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*•عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId_Info.id).." } *","md",true)  
